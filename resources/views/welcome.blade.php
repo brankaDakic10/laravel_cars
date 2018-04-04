@@ -14,6 +14,7 @@
        
     </head>
     <body>
-    Welcome to Cars Project
+    Welcome to {{$name}}. I'm {{$age}} years old !
+   
     </body>
 </html>
