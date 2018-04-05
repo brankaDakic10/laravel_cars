@@ -21,6 +21,9 @@ Route::get('/', function () {
 Route::get('/about', function () {
     return view('about');
 });
+// for all cars
 Route::get('/cars','CarsController@index')->name('all-cars');
+////for single car
+Route::get('/cars/{id}','CarsController@show' )->name('single-car');
 
    
