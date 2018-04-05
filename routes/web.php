@@ -10,6 +10,7 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
+///added use 
 use App\Car;
 
 Route::get('/', function () {
