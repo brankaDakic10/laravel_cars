@@ -10,13 +10,17 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
+use App\Car;
 
 Route::get('/', function () {
     $name='Cars Project';
     $age=25;
     return view('welcome', compact(['name','age']));
 });
-
+//about page
 Route::get('/about', function () {
     return view('about');
 });
+Route::get('/cars','CarsController@index')->name('all-cars');
+
+   
